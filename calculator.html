@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sum Calculator</title>
+
+</head>
+	<body>
+		<form id="canvasForm">
+			<label>sum1 <input type="text" name="sum1" size="3" value=""></label>
+			<label>sum2 <input type="text" name="sum2" size="3" value="" ></label>
+            
+		<input type="submit" value="add sum">
+			
+		</form>
+		
+		<script>
+			
+			var form = document.getElementById('canvasForm');
+			form.addEventListener('submit', function(event) {
+				event.preventDefault();
+				var sum= parseInt(form.sum1.value )+ parseInt(form.sum2.value)
+				
+				alert("addin of sums "+sum)
+			});
+   	</script>
+	</body>
+	
+</html>
+		
